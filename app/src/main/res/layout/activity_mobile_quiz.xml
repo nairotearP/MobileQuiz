@@ -1,0 +1,240 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        tools:context=".MobileQuiz"
+        android:background="#EEFFFFFF">
+
+        <!-- Title of quiz -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/title"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000000"/>
+
+        <!-- Separator -->
+        <LinearLayout
+            style="@style/SeparatorL">
+            <TextView
+                style="@style/SeparatorT"
+                android:layout_weight="2"
+                android:background="@drawable/gradientleft"/>
+            <TextView
+                style="@style/SeparatorT"
+                android:layout_weight="1"/>
+            <TextView
+                style="@style/SeparatorT"
+                android:layout_weight="2"
+                android:background="@drawable/gradientright"/>
+        </LinearLayout>
+
+        <!-- Question 1 -->
+        <TextView
+            style="@style/QuestionText"
+            android:text="@string/question_one" />
+        <EditText
+            android:id="@+id/name_field"
+            style="@style/EditText"
+            android:hint="@string/question_hint" />
+
+        <!-- Separator -->
+        <LinearLayout
+            style="@style/SeparatorL">
+            <TextView
+                style="@style/SeparatorT"
+                android:layout_weight="2"
+                android:background="@drawable/gradientleft"/>
+            <TextView
+                style="@style/SeparatorT"
+                android:layout_weight="1"/>
+            <TextView
+                style="@style/SeparatorT"
+                android:layout_weight="2"
+                android:background="@drawable/gradientright"/>
+        </LinearLayout>
+        
+        <!-- Question 2 -->
+        <TextView
+            style="@style/QuestionText"
+            android:text="@string/question_two" />
+        <RadioGroup
+            style="@style/RadioGroup">
+
+            <RadioButton
+                android:id="@+id/radio_megahertz"
+                style="@style/RadioButton"
+                android:text="@string/megahertz" />
+            <RadioButton
+                android:id="@+id/radio_megabyte"
+                style="@style/RadioButton"
+                android:text="@string/megabyte" />
+            <RadioButton
+                android:id="@+id/radio_megapixel"
+                style="@style/RadioButton"
+                android:text="@string/megapixel" />
+        </RadioGroup>
+
+        <!-- Separator -->
+        <LinearLayout
+            style="@style/SeparatorL">
+            <TextView
+                style="@style/SeparatorT"
+                android:layout_weight="2"
+                android:background="@drawable/gradientleft"/>
+            <TextView
+                style="@style/SeparatorT"
+                android:layout_weight="1"/>
+            <TextView
+                style="@style/SeparatorT"
+                android:layout_weight="2"
+                android:background="@drawable/gradientright"/>
+        </LinearLayout>
+
+        <!-- Question 3 -->
+        <TextView
+            style="@style/QuestionText"
+            android:text="@string/question_three" />
+        <EditText
+            android:id="@+id/question_three_field"
+            style="@style/EditText"
+            android:hint="@string/question_hint" />
+
+        <!-- Separator -->
+        <LinearLayout
+            style="@style/SeparatorL">
+            <TextView
+                style="@style/SeparatorT"
+                android:layout_weight="2"
+                android:background="@drawable/gradientleft"/>
+            <TextView
+                style="@style/SeparatorT"
+                android:layout_weight="1"/>
+            <TextView
+                style="@style/SeparatorT"
+                android:layout_weight="2"
+                android:background="@drawable/gradientright"/>
+        </LinearLayout>
+
+        <!-- Question 4 -->
+        <TextView
+            style="@style/QuestionText"
+            android:text="@string/question_four" />
+        <RadioGroup
+            style="@style/RadioGroup">
+
+            <RadioButton
+                android:id="@+id/radio_hd"
+                style="@style/RadioButton"
+                android:text="@string/hd_resolution" />
+            <RadioButton
+                android:id="@+id/radio_fhd"
+                style="@style/RadioButton"
+                android:text="@string/fhd_resolution" />
+            <RadioButton
+                android:id="@+id/radio_qhd"
+                style="@style/RadioButton"
+                android:text="@string/qhd_resolution" />
+        </RadioGroup>
+
+        <!-- Separator -->
+        <LinearLayout
+            style="@style/SeparatorL">
+            <TextView
+                style="@style/SeparatorT"
+                android:layout_weight="2"
+                android:background="@drawable/gradientleft"/>
+            <TextView
+                style="@style/SeparatorT"
+                android:layout_weight="1"/>
+            <TextView
+                style="@style/SeparatorT"
+                android:layout_weight="2"
+                android:background="@drawable/gradientright"/>
+        </LinearLayout>
+
+        <!-- Question 5 -->
+        <TextView
+            style="@style/QuestionText"
+            android:text="@string/question_five" />
+
+        <CheckBox
+            android:id="@+id/c_dual_sim"
+            style="@style/CheckBox"
+            android:text="@string/c_dual_sim"/>
+
+        <CheckBox
+            android:id="@+id/c_firmware"
+            style="@style/CheckBox"
+            android:text="@string/c_firmware"/>
+
+        <CheckBox
+            android:id="@+id/c_tethering"
+            style="@style/CheckBox"
+            android:text="@string/c_tethering"/>
+
+        <CheckBox
+            android:id="@+id/c_microsd"
+            style="@style/CheckBox"
+            android:text="@string/c_micro_sd"/>
+
+        <CheckBox
+            android:id="@+id/c_ram"
+            style="@style/CheckBox"
+            android:text="@string/c_ram"/>
+
+        <CheckBox
+            android:id="@+id/c_bezel"
+            style="@style/CheckBox"
+            android:text="@string/c_bezel"/>
+
+        <CheckBox
+            android:id="@+id/c_url"
+            style="@style/CheckBox"
+            android:text="@string/c_url"/>
+
+        <CheckBox
+            android:id="@+id/c_os"
+            style="@style/CheckBox"
+            android:text="@string/c_os"/>
+
+        <CheckBox
+            android:id="@+id/c_ppi"
+            style="@style/CheckBox"
+            android:text="@string/c_ppi"/>
+        <CheckBox
+            android:id="@+id/c_mbps"
+            style="@style/CheckBox"
+            android:text="@string/c_mbps"/>
+
+        <!-- Separator -->
+        <LinearLayout
+            style="@style/SeparatorL">
+            <TextView
+                style="@style/SeparatorT"
+                android:background="@drawable/gradientleft"/>
+            <TextView
+                style="@style/SeparatorT" />
+            <TextView
+                style="@style/SeparatorT"
+                android:background="@drawable/gradientright"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
