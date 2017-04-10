@@ -17,30 +17,39 @@
         tools:context=".MobileQuiz"
         android:background="#EEFFFFFF">
 
+        <!-- Separator side -->
+        <LinearLayout
+            style="@style/SeparatorL">
+            <TextView
+                style="@style/SeparatorT"
+                android:background="@drawable/gradientleft"/>
+            <TextView
+                style="@style/SeparatorT"
+                android:background="@drawable/gradientright"/>
+        </LinearLayout>
+
         <!-- Title of quiz -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
             android:text="@string/title"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:textColor="#000000"/>
 
-        <!-- Separator -->
+        <!-- Separator side -->
         <LinearLayout
             style="@style/SeparatorL">
             <TextView
                 style="@style/SeparatorT"
-                android:layout_weight="2"
                 android:background="@drawable/gradientleft"/>
             <TextView
                 style="@style/SeparatorT"
-                android:layout_weight="1"/>
-            <TextView
-                style="@style/SeparatorT"
-                android:layout_weight="2"
                 android:background="@drawable/gradientright"/>
+
         </LinearLayout>
 
         <!-- Question 1 -->
@@ -52,20 +61,15 @@
             style="@style/EditText"
             android:hint="@string/question_hint" />
 
-        <!-- Separator -->
+        <!-- Separator center -->
         <LinearLayout
             style="@style/SeparatorL">
             <TextView
                 style="@style/SeparatorT"
-                android:layout_weight="2"
-                android:background="@drawable/gradientleft"/>
-            <TextView
-                style="@style/SeparatorT"
-                android:layout_weight="1"/>
-            <TextView
-                style="@style/SeparatorT"
-                android:layout_weight="2"
                 android:background="@drawable/gradientright"/>
+            <TextView
+                style="@style/SeparatorT"
+                android:background="@drawable/gradientleft"/>
         </LinearLayout>
         
         <!-- Question 2 -->
@@ -89,20 +93,15 @@
                 android:text="@string/megapixel" />
         </RadioGroup>
 
-        <!-- Separator -->
+        <!-- Separator center -->
         <LinearLayout
             style="@style/SeparatorL">
             <TextView
                 style="@style/SeparatorT"
-                android:layout_weight="2"
-                android:background="@drawable/gradientleft"/>
-            <TextView
-                style="@style/SeparatorT"
-                android:layout_weight="1"/>
-            <TextView
-                style="@style/SeparatorT"
-                android:layout_weight="2"
                 android:background="@drawable/gradientright"/>
+            <TextView
+                style="@style/SeparatorT"
+                android:background="@drawable/gradientleft"/>
         </LinearLayout>
 
         <!-- Question 3 -->
@@ -114,20 +113,15 @@
             style="@style/EditText"
             android:hint="@string/question_hint" />
 
-        <!-- Separator -->
+        <!-- Separator center -->
         <LinearLayout
             style="@style/SeparatorL">
             <TextView
                 style="@style/SeparatorT"
-                android:layout_weight="2"
-                android:background="@drawable/gradientleft"/>
-            <TextView
-                style="@style/SeparatorT"
-                android:layout_weight="1"/>
-            <TextView
-                style="@style/SeparatorT"
-                android:layout_weight="2"
                 android:background="@drawable/gradientright"/>
+            <TextView
+                style="@style/SeparatorT"
+                android:background="@drawable/gradientleft"/>
         </LinearLayout>
 
         <!-- Question 4 -->
@@ -151,20 +145,15 @@
                 android:text="@string/qhd_resolution" />
         </RadioGroup>
 
-        <!-- Separator -->
+        <!-- Separator center -->
         <LinearLayout
             style="@style/SeparatorL">
             <TextView
                 style="@style/SeparatorT"
-                android:layout_weight="2"
-                android:background="@drawable/gradientleft"/>
-            <TextView
-                style="@style/SeparatorT"
-                android:layout_weight="1"/>
-            <TextView
-                style="@style/SeparatorT"
-                android:layout_weight="2"
                 android:background="@drawable/gradientright"/>
+            <TextView
+                style="@style/SeparatorT"
+                android:background="@drawable/gradientleft"/>
         </LinearLayout>
 
         <!-- Question 5 -->
@@ -172,63 +161,122 @@
             style="@style/QuestionText"
             android:text="@string/question_five" />
 
-        <CheckBox
-            android:id="@+id/c_dual_sim"
-            style="@style/CheckBox"
-            android:text="@string/c_dual_sim"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
 
-        <CheckBox
-            android:id="@+id/c_firmware"
-            style="@style/CheckBox"
-            android:text="@string/c_firmware"/>
+            <CheckBox
+                android:id="@+id/c_dual_sim"
+                style="@style/CheckBox"
+                android:text="@string/c_dual_sim"/>
 
-        <CheckBox
-            android:id="@+id/c_tethering"
-            style="@style/CheckBox"
-            android:text="@string/c_tethering"/>
+            <CheckBox
+                android:id="@+id/c_firmware"
+                style="@style/CheckBox"
+                android:text="@string/c_firmware" />
 
-        <CheckBox
-            android:id="@+id/c_microsd"
-            style="@style/CheckBox"
-            android:text="@string/c_micro_sd"/>
+            <CheckBox
+                android:id="@+id/c_tethering"
+                style="@style/CheckBox"
+                android:text="@string/c_tethering"/>
 
-        <CheckBox
-            android:id="@+id/c_ram"
-            style="@style/CheckBox"
-            android:text="@string/c_ram"/>
+        </LinearLayout>
 
-        <CheckBox
-            android:id="@+id/c_bezel"
-            style="@style/CheckBox"
-            android:text="@string/c_bezel"/>
+        <LinearLayout
+           style="@style/LinearLayoutC">
 
-        <CheckBox
-            android:id="@+id/c_url"
-            style="@style/CheckBox"
-            android:text="@string/c_url"/>
+            <CheckBox
+                android:id="@+id/c_microsd"
+                style="@style/CheckBox"
+                android:text="@string/c_micro_sd"/>
 
-        <CheckBox
-            android:id="@+id/c_os"
-            style="@style/CheckBox"
-            android:text="@string/c_os"/>
+            <CheckBox
+                android:id="@+id/c_ram"
+                style="@style/CheckBox"
+                android:text="@string/c_ram"/>
 
-        <CheckBox
-            android:id="@+id/c_ppi"
-            style="@style/CheckBox"
-            android:text="@string/c_ppi"/>
-        <CheckBox
-            android:id="@+id/c_mbps"
-            style="@style/CheckBox"
-            android:text="@string/c_mbps"/>
+            <CheckBox
+                android:id="@+id/c_bezel"
+                style="@style/CheckBox"
+                android:text="@string/c_bezel"/>
 
-        <!-- Separator -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/c_url"
+                style="@style/CheckBox"
+                android:text="@string/c_url"/>
+
+            <CheckBox
+                android:id="@+id/c_os"
+                style="@style/CheckBox"
+                android:text="@string/c_os"/>
+
+            <CheckBox
+                android:id="@+id/c_ppi"
+                style="@style/CheckBox"
+                android:text="@string/c_ppi"/>
+            <CheckBox
+                android:id="@+id/c_mbps"
+                style="@style/CheckBox"
+                android:text="@string/c_mbps"/>
+        </LinearLayout>
+
+        <!-- Separator center -->
+        <LinearLayout
+            style="@style/SeparatorL">
+            <TextView
+                style="@style/SeparatorT"
+                android:background="@drawable/gradientright"/>
+            <TextView
+                style="@style/SeparatorT"
+                android:background="@drawable/gradientleft"/>
+        </LinearLayout>
+
+        <!-- Question 6 -->
+        <TextView
+            style="@style/QuestionText"
+            android:text="@string/question_six" />
+        <EditText
+            android:id="@+id/question_six_field"
+            style="@style/EditText"
+            android:hint="@string/question_hint" />
+
+        <!-- Separator side -->
         <LinearLayout
             style="@style/SeparatorL">
             <TextView
                 style="@style/SeparatorT"
                 android:background="@drawable/gradientleft"/>
             <TextView
-                style="@style/SeparatorT" />
+                style="@style/SeparatorT"
+                android:background="@drawable/gradientright"/>
+        </LinearLayout>
+
+        <!-- Submit button -->
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:text="@string/submit_button"
+            android:background="@drawable/startbutton"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"/>
+
+        <!-- Separator side -->
+        <LinearLayout
+            style="@style/SeparatorL">
+            <TextView
+                style="@style/SeparatorT"
+                android:background="@drawable/gradientleft"/>
             <TextView
                 style="@style/SeparatorT"
                 android:background="@drawable/gradientright"/>

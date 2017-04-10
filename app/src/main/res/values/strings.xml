@@ -24,4 +24,6 @@
     <string name="c_os">OS</string>
     <string name="c_ppi">PPI</string>
     <string name="c_mbps">Mbps</string>
+    <string name="question_six">Which is the smartphone operating system with the largest user base in the world today?</string>
+    <string name="submit_button">Submit</string>
 </resources>

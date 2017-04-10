@@ -1,6 +1,5 @@
 package com.example.android.mobilequiz;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -14,12 +13,9 @@ public class StartingPage extends AppCompatActivity {
         setContentView(R.layout.starting_page);
     }
 
-        public void startQuiz(View view) {
-        final Context context = this;
-        Intent intent = new Intent(context, MobileQuiz.class);
+    public void startQuiz(View view) {
+        Intent intent = new Intent(this, MobileQuiz.class);
         startActivity(intent);
-
-            }
-
-        }
+    }
+}
 
