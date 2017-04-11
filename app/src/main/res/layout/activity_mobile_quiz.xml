@@ -4,15 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:fillViewport="false"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
+
+
     android:background="@drawable/background">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:orientation="vertical"
         tools:context=".MobileQuiz"
         android:background="#EEFFFFFF">
@@ -30,6 +32,7 @@
 
         <!-- Title of quiz -->
         <TextView
+            android:id="@+id/quiz_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -56,8 +59,9 @@
         <TextView
             style="@style/QuestionText"
             android:text="@string/question_one" />
+
         <EditText
-            android:id="@+id/name_field"
+            android:id="@+id/question_one_field"
             style="@style/EditText"
             android:hint="@string/question_hint" />
 
@@ -76,6 +80,7 @@
         <TextView
             style="@style/QuestionText"
             android:text="@string/question_two" />
+
         <RadioGroup
             style="@style/RadioGroup">
 
@@ -108,6 +113,7 @@
         <TextView
             style="@style/QuestionText"
             android:text="@string/question_three" />
+
         <EditText
             android:id="@+id/question_three_field"
             style="@style/EditText"
@@ -128,6 +134,7 @@
         <TextView
             style="@style/QuestionText"
             android:text="@string/question_four" />
+
         <RadioGroup
             style="@style/RadioGroup">
 
@@ -164,70 +171,58 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
             android:orientation="horizontal">
 
-            <CheckBox
-                android:id="@+id/c_dual_sim"
-                style="@style/CheckBox"
-                android:text="@string/c_dual_sim"/>
+            <LinearLayout
+                style="@style/LinearLayoutC">
 
-            <CheckBox
-                android:id="@+id/c_firmware"
-                style="@style/CheckBox"
-                android:text="@string/c_firmware" />
+                <CheckBox
+                    android:id="@+id/c_dual_sim"
+                    style="@style/CheckBox"
+                    android:text="@string/c_dual_sim"/>
+                <CheckBox
+                    android:id="@+id/c_firmware"
+                    style="@style/CheckBox"
+                    android:text="@string/c_firmware" />
+                <CheckBox
+                    android:id="@+id/c_tethering"
+                    style="@style/CheckBox"
+                    android:text="@string/c_tethering"/>
+                <CheckBox
+                    android:id="@+id/c_microsd"
+                    style="@style/CheckBox"
+                    android:text="@string/c_micro_sd"/>
+                <CheckBox
+                    android:id="@+id/c_ram"
+                    style="@style/CheckBox"
+                    android:text="@string/c_ram"/>
+            </LinearLayout>
 
-            <CheckBox
-                android:id="@+id/c_tethering"
-                style="@style/CheckBox"
-                android:text="@string/c_tethering"/>
+            <LinearLayout
+                style="@style/LinearLayoutC">
 
-        </LinearLayout>
+                <CheckBox
+                    android:id="@+id/c_bezel"
+                    style="@style/CheckBox"
+                    android:text="@string/c_bezel"/>
+                <CheckBox
+                    android:id="@+id/c_url"
+                    style="@style/CheckBox"
+                    android:text="@string/c_url"/>
+                <CheckBox
+                    android:id="@+id/c_os"
+                    style="@style/CheckBox"
+                    android:text="@string/c_os"/>
+                <CheckBox
+                    android:id="@+id/c_ppi"
+                    style="@style/CheckBox"
+                    android:text="@string/c_ppi"/>
+                <CheckBox
+                    android:id="@+id/c_mbps"
+                    style="@style/CheckBox"
+                    android:text="@string/c_mbps"/>
+            </LinearLayout>
 
-        <LinearLayout
-           style="@style/LinearLayoutC">
-
-            <CheckBox
-                android:id="@+id/c_microsd"
-                style="@style/CheckBox"
-                android:text="@string/c_micro_sd"/>
-
-            <CheckBox
-                android:id="@+id/c_ram"
-                style="@style/CheckBox"
-                android:text="@string/c_ram"/>
-
-            <CheckBox
-                android:id="@+id/c_bezel"
-                style="@style/CheckBox"
-                android:text="@string/c_bezel"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:orientation="horizontal">
-
-            <CheckBox
-                android:id="@+id/c_url"
-                style="@style/CheckBox"
-                android:text="@string/c_url"/>
-
-            <CheckBox
-                android:id="@+id/c_os"
-                style="@style/CheckBox"
-                android:text="@string/c_os"/>
-
-            <CheckBox
-                android:id="@+id/c_ppi"
-                style="@style/CheckBox"
-                android:text="@string/c_ppi"/>
-            <CheckBox
-                android:id="@+id/c_mbps"
-                style="@style/CheckBox"
-                android:text="@string/c_mbps"/>
         </LinearLayout>
 
         <!-- Separator center -->
@@ -245,6 +240,7 @@
         <TextView
             style="@style/QuestionText"
             android:text="@string/question_six" />
+
         <EditText
             android:id="@+id/question_six_field"
             style="@style/EditText"
@@ -269,7 +265,8 @@
             android:background="@drawable/startbutton"
             android:textSize="16sp"
             android:textColor="#FFFFFF"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:onClick="submitAnswers"/>
 
         <!-- Separator side -->
         <LinearLayout
@@ -283,6 +280,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
 
 </ScrollView>
