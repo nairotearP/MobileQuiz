@@ -1,29 +1,57 @@
 <resources>
+    <!-- Title of the application. [CHAR LIMIT=12] -->
     <string name="app_name">MobileQuiz</string>
-    <string name="start_button">Tap here to start quiz</string>
-    <string name="title">General knowledge technology quiz</string>
-    <string name="question_one">Please write your name below for a personalized reprimand if you fail this quiz.</string>
-    <string name="question_hint">write your text here</string>
+
+    <!-- Text for the start quiz button -->
+    <string name="start_button">Tap here to start the quiz</string>
+
+    <!-- Title of quiz on main activity page -->
+    <string name="title">General Knowledge Mobile Technology Quiz</string>
+
+    <!-- Text of question one -->
+    <string name="question_one">What do you call yourself?</string>
+
+    <!-- Hint text displayed in all the empty fields of EditText views [CHAR LIMIT=20] -->
+    <string name="question_hint">Write your text here</string>
+
+    <!-- Text of question two -->
     <string name="question_two">Which is the term used to represent the resolution of a Camera sensor?</string>
+
+    <!-- Texts for the radio button answers of question two -->
     <string name="megahertz">Megahertz</string>
     <string name="megabyte">Megabyte</string>
     <string name="megapixel">Megapixel</string>
+
+    <!-- Text of question three -->
     <string name="question_three">What is the name of the tech giant which launched in 2016 a flagship exploding smartphone?</string>
+
+    <!-- Text of question four -->
     <string name="question_four">Which screen resolution in pixels (px) is commonly known as Full HD?</string>
+
+    <!-- Texts for the radio button answers of question four -->
     <string name="hd_resolution">1280x720</string>
     <string name="fhd_resolution">1920x1080</string>
     <string name="qhd_resolution">2560x1440</string>
-    <string name="question_five">Check the boxes below for any of the terms and abbreviations you think you recognize.</string>
+
+    <!-- Text of question five -->
+    <string name="question_five">Which of the terms below are directly related with activities or features of smartphones?</string>
+
+    <!-- Texts for the checkboxes of question five-->
     <string name="c_dual_sim">Dual-SIM</string>
-    <string name="c_firmware">Firmware</string>
-    <string name="c_tethering">Tethering</string>
-    <string name="c_micro_sd">microSD</string>
-    <string name="c_ram">RAM</string>
+    <string name="c_hdd">HDD</string>
     <string name="c_bezel">Bezel</string>
-    <string name="c_url">URL</string>
-    <string name="c_os">OS</string>
-    <string name="c_ppi">PPI</string>
-    <string name="c_mbps">Mbps</string>
-    <string name="question_six">Which is the smartphone operating system with the largest user base in the world today?</string>
+    <string name="c_terminal">Terminal</string>
+    <string name="c_routing">Routing</string>
+    <string name="c_gorilla">Gorilla Glass</string>
+    <string name="c_micro_sd">microSD</string>
+    <string name="c_ethernet">Ethernet</string>
+
+    <!-- Text of question six -->
+    <string name="question_six">How do you call the process of transmitting or receiving data, video or audio material over the internet as a steady, continuous flow?</string>
+
+    <!-- Text of question seven -->
+    <string name="question_seven">Which is the smartphone operating system with the largest user base in the world today?</string>
+
+    <!-- Text for the submit quiz button -->
     <string name="submit_button">Submit</string>
 </resources>

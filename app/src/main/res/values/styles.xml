@@ -61,7 +61,7 @@
         <item name="android:textSize">12sp</item>
     </style>
 
-    <!-- Style for the Linearlayouts from q5 -->
+    <!-- Style for the Linearlayouts from question five -->
     <style name="LinearLayoutC">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
@@ -74,9 +74,9 @@
     <style name="CheckBox">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
         <item name="android:layout_weight">1</item>
-        <item name="android:textSize">10sp</item>
+        <item name="android:textSize">12sp</item>
     </style>
-
 
 </resources>

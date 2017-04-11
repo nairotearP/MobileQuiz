@@ -13,6 +13,9 @@ public class StartingPage extends AppCompatActivity {
         setContentView(R.layout.starting_page);
     }
 
+    /**
+     * this method is called when tapping on the button to start the quiz.
+     */
     public void startQuiz(View view) {
         Intent intent = new Intent(this, MobileQuiz.class);
         startActivity(intent);

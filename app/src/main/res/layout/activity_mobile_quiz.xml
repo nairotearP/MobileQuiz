@@ -1,33 +1,31 @@
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:fillViewport="false"
-
-
-    android:background="@drawable/background">
+    android:background="@drawable/background"
+    android:fillViewport="false">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
+        android:background="#EEFFFFFF"
+        android:orientation="vertical"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:orientation="vertical"
-        tools:context=".MobileQuiz"
-        android:background="#EEFFFFFF">
+        tools:context=".MobileQuiz">
 
         <!-- Separator side -->
-        <LinearLayout
-            style="@style/SeparatorL">
+        <LinearLayout style="@style/SeparatorL">
+
             <TextView
                 style="@style/SeparatorT"
-                android:background="@drawable/gradientleft"/>
+                android:background="@drawable/gradientleft" />
+
             <TextView
                 style="@style/SeparatorT"
-                android:background="@drawable/gradientright"/>
+                android:background="@drawable/gradientright" />
         </LinearLayout>
 
         <!-- Title of quiz -->
@@ -35,27 +33,28 @@
             android:id="@+id/quiz_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:text="@string/title"
-            android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:textColor="#000000"/>
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/title"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <!-- Separator side -->
-        <LinearLayout
-            style="@style/SeparatorL">
+        <LinearLayout style="@style/SeparatorL">
+
             <TextView
                 style="@style/SeparatorT"
-                android:background="@drawable/gradientleft"/>
+                android:background="@drawable/gradientleft" />
+
             <TextView
                 style="@style/SeparatorT"
-                android:background="@drawable/gradientright"/>
+                android:background="@drawable/gradientright" />
 
         </LinearLayout>
 
-        <!-- Question 1 -->
+        <!-- Question 1, enter your name -->
         <TextView
             style="@style/QuestionText"
             android:text="@string/question_one" />
@@ -66,32 +65,34 @@
             android:hint="@string/question_hint" />
 
         <!-- Separator center -->
-        <LinearLayout
-            style="@style/SeparatorL">
+        <LinearLayout style="@style/SeparatorL">
+
             <TextView
                 style="@style/SeparatorT"
-                android:background="@drawable/gradientright"/>
+                android:background="@drawable/gradientright" />
+
             <TextView
                 style="@style/SeparatorT"
-                android:background="@drawable/gradientleft"/>
+                android:background="@drawable/gradientleft" />
         </LinearLayout>
-        
+
         <!-- Question 2 -->
         <TextView
             style="@style/QuestionText"
             android:text="@string/question_two" />
 
-        <RadioGroup
-            style="@style/RadioGroup">
+        <RadioGroup style="@style/RadioGroup">
 
             <RadioButton
                 android:id="@+id/radio_megahertz"
                 style="@style/RadioButton"
                 android:text="@string/megahertz" />
+
             <RadioButton
                 android:id="@+id/radio_megabyte"
                 style="@style/RadioButton"
                 android:text="@string/megabyte" />
+
             <RadioButton
                 android:id="@+id/radio_megapixel"
                 style="@style/RadioButton"
@@ -99,14 +100,15 @@
         </RadioGroup>
 
         <!-- Separator center -->
-        <LinearLayout
-            style="@style/SeparatorL">
+        <LinearLayout style="@style/SeparatorL">
+
             <TextView
                 style="@style/SeparatorT"
-                android:background="@drawable/gradientright"/>
+                android:background="@drawable/gradientright" />
+
             <TextView
                 style="@style/SeparatorT"
-                android:background="@drawable/gradientleft"/>
+                android:background="@drawable/gradientleft" />
         </LinearLayout>
 
         <!-- Question 3 -->
@@ -120,14 +122,15 @@
             android:hint="@string/question_hint" />
 
         <!-- Separator center -->
-        <LinearLayout
-            style="@style/SeparatorL">
+        <LinearLayout style="@style/SeparatorL">
+
             <TextView
                 style="@style/SeparatorT"
-                android:background="@drawable/gradientright"/>
+                android:background="@drawable/gradientright" />
+
             <TextView
                 style="@style/SeparatorT"
-                android:background="@drawable/gradientleft"/>
+                android:background="@drawable/gradientleft" />
         </LinearLayout>
 
         <!-- Question 4 -->
@@ -135,17 +138,18 @@
             style="@style/QuestionText"
             android:text="@string/question_four" />
 
-        <RadioGroup
-            style="@style/RadioGroup">
+        <RadioGroup style="@style/RadioGroup">
 
             <RadioButton
                 android:id="@+id/radio_hd"
                 style="@style/RadioButton"
                 android:text="@string/hd_resolution" />
+
             <RadioButton
                 android:id="@+id/radio_fhd"
                 style="@style/RadioButton"
                 android:text="@string/fhd_resolution" />
+
             <RadioButton
                 android:id="@+id/radio_qhd"
                 style="@style/RadioButton"
@@ -153,14 +157,15 @@
         </RadioGroup>
 
         <!-- Separator center -->
-        <LinearLayout
-            style="@style/SeparatorL">
+        <LinearLayout style="@style/SeparatorL">
+
             <TextView
                 style="@style/SeparatorT"
-                android:background="@drawable/gradientright"/>
+                android:background="@drawable/gradientright" />
+
             <TextView
                 style="@style/SeparatorT"
-                android:background="@drawable/gradientleft"/>
+                android:background="@drawable/gradientleft" />
         </LinearLayout>
 
         <!-- Question 5 -->
@@ -173,67 +178,64 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <LinearLayout
-                style="@style/LinearLayoutC">
+            <LinearLayout style="@style/LinearLayoutC">
 
                 <CheckBox
                     android:id="@+id/c_dual_sim"
                     style="@style/CheckBox"
-                    android:text="@string/c_dual_sim"/>
-                <CheckBox
-                    android:id="@+id/c_firmware"
-                    style="@style/CheckBox"
-                    android:text="@string/c_firmware" />
-                <CheckBox
-                    android:id="@+id/c_tethering"
-                    style="@style/CheckBox"
-                    android:text="@string/c_tethering"/>
-                <CheckBox
-                    android:id="@+id/c_microsd"
-                    style="@style/CheckBox"
-                    android:text="@string/c_micro_sd"/>
-                <CheckBox
-                    android:id="@+id/c_ram"
-                    style="@style/CheckBox"
-                    android:text="@string/c_ram"/>
-            </LinearLayout>
+                    android:text="@string/c_dual_sim" />
 
-            <LinearLayout
-                style="@style/LinearLayoutC">
+                <CheckBox
+                    android:id="@+id/c_hdd"
+                    style="@style/CheckBox"
+                    android:text="@string/c_hdd" />
 
                 <CheckBox
                     android:id="@+id/c_bezel"
                     style="@style/CheckBox"
-                    android:text="@string/c_bezel"/>
+                    android:text="@string/c_bezel" />
+
                 <CheckBox
-                    android:id="@+id/c_url"
+                    android:id="@+id/c_terminal"
                     style="@style/CheckBox"
-                    android:text="@string/c_url"/>
+                    android:text="@string/c_terminal" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutC">
+
                 <CheckBox
-                    android:id="@+id/c_os"
+                    android:id="@+id/c_routing"
                     style="@style/CheckBox"
-                    android:text="@string/c_os"/>
+                    android:text="@string/c_routing" />
+
                 <CheckBox
-                    android:id="@+id/c_ppi"
+                    android:id="@+id/c_gorilla"
                     style="@style/CheckBox"
-                    android:text="@string/c_ppi"/>
+                    android:text="@string/c_gorilla" />
+
                 <CheckBox
-                    android:id="@+id/c_mbps"
+                    android:id="@+id/c_microsd"
                     style="@style/CheckBox"
-                    android:text="@string/c_mbps"/>
+                    android:text="@string/c_micro_sd" />
+
+                <CheckBox
+                    android:id="@+id/c_ethernet"
+                    style="@style/CheckBox"
+                    android:text="@string/c_ethernet" />
             </LinearLayout>
 
         </LinearLayout>
 
         <!-- Separator center -->
-        <LinearLayout
-            style="@style/SeparatorL">
+        <LinearLayout style="@style/SeparatorL">
+
             <TextView
                 style="@style/SeparatorT"
-                android:background="@drawable/gradientright"/>
+                android:background="@drawable/gradientright" />
+
             <TextView
                 style="@style/SeparatorT"
-                android:background="@drawable/gradientleft"/>
+                android:background="@drawable/gradientleft" />
         </LinearLayout>
 
         <!-- Question 6 -->
@@ -247,36 +249,60 @@
             android:hint="@string/question_hint" />
 
         <!-- Separator side -->
-        <LinearLayout
-            style="@style/SeparatorL">
+        <LinearLayout style="@style/SeparatorL">
+
             <TextView
                 style="@style/SeparatorT"
-                android:background="@drawable/gradientleft"/>
+                android:background="@drawable/gradientleft" />
+
             <TextView
                 style="@style/SeparatorT"
-                android:background="@drawable/gradientright"/>
+                android:background="@drawable/gradientright" />
+        </LinearLayout>
+
+        <!-- Question 7 -->
+        <TextView
+            style="@style/QuestionText"
+            android:text="@string/question_seven" />
+
+        <EditText
+            android:id="@+id/question_seven_field"
+            style="@style/EditText"
+            android:hint="@string/question_hint" />
+
+        <!-- Separator side -->
+        <LinearLayout style="@style/SeparatorL">
+
+            <TextView
+                style="@style/SeparatorT"
+                android:background="@drawable/gradientleft" />
+
+            <TextView
+                style="@style/SeparatorT"
+                android:background="@drawable/gradientright" />
         </LinearLayout>
 
         <!-- Submit button -->
         <Button
             android:layout_width="80dp"
             android:layout_height="60dp"
-            android:text="@string/submit_button"
-            android:background="@drawable/startbutton"
-            android:textSize="16sp"
-            android:textColor="#FFFFFF"
             android:layout_gravity="center"
-            android:onClick="submitAnswers"/>
+            android:background="@drawable/startbutton"
+            android:onClick="submitAnswers"
+            android:text="@string/submit_button"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
 
         <!-- Separator side -->
-        <LinearLayout
-            style="@style/SeparatorL">
+        <LinearLayout style="@style/SeparatorL">
+
             <TextView
                 style="@style/SeparatorT"
-                android:background="@drawable/gradientleft"/>
+                android:background="@drawable/gradientleft" />
+
             <TextView
                 style="@style/SeparatorT"
-                android:background="@drawable/gradientright"/>
+                android:background="@drawable/gradientright" />
         </LinearLayout>
 
     </LinearLayout>
