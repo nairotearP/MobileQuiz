@@ -183,22 +183,26 @@
                 <CheckBox
                     android:id="@+id/c_dual_sim"
                     style="@style/CheckBox"
-                    android:text="@string/c_dual_sim" />
+                    android:text="@string/c_dual_sim"
+                    android:onClick="checkboxOneClick"/>
 
                 <CheckBox
                     android:id="@+id/c_hdd"
                     style="@style/CheckBox"
-                    android:text="@string/c_hdd" />
+                    android:text="@string/c_hdd"
+                    android:onClick="checkboxTwoClick"/>
 
                 <CheckBox
                     android:id="@+id/c_bezel"
                     style="@style/CheckBox"
-                    android:text="@string/c_bezel" />
+                    android:text="@string/c_bezel"
+                android:onClick="checkboxThreeClick"/>
 
                 <CheckBox
                     android:id="@+id/c_terminal"
                     style="@style/CheckBox"
-                    android:text="@string/c_terminal" />
+                    android:text="@string/c_terminal"
+                    android:onClick="checkboxFourClick"/>
             </LinearLayout>
 
             <LinearLayout style="@style/LinearLayoutC">
@@ -206,22 +210,26 @@
                 <CheckBox
                     android:id="@+id/c_routing"
                     style="@style/CheckBox"
-                    android:text="@string/c_routing" />
+                    android:text="@string/c_routing"
+                    android:onClick="checkboxFiveClick"/>
 
                 <CheckBox
                     android:id="@+id/c_gorilla"
                     style="@style/CheckBox"
-                    android:text="@string/c_gorilla" />
+                    android:text="@string/c_gorilla"
+                    android:onClick="checkboxSixClick"/>
 
                 <CheckBox
                     android:id="@+id/c_microsd"
                     style="@style/CheckBox"
-                    android:text="@string/c_micro_sd" />
+                    android:text="@string/c_micro_sd"
+                    android:onClick="checkboxSevenClick"/>
 
                 <CheckBox
                     android:id="@+id/c_ethernet"
                     style="@style/CheckBox"
-                    android:text="@string/c_ethernet" />
+                    android:text="@string/c_ethernet"
+                    android:onClick="checkboxEightClick"/>
             </LinearLayout>
 
         </LinearLayout>
